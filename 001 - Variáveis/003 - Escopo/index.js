@@ -7,6 +7,7 @@
 // Declaramos uma variável 'nome' no escopo global com o valor "João"
 let nome = "João";
 // Imprimimos o valor da variável 'nome' global
+console.log("Escopo global:")
 console.log(nome);
 
 // Criamos uma função que demonstra o escopo local
@@ -14,6 +15,7 @@ function minhaFuncao() {
     // Aqui declaramos outra variável 'nome' mas no escopo local da função
     // Esta variável é diferente da variável global, mesmo tendo o mesmo nome
     let nome = "Maria";
+    console.log("Escopo local:")
     // Imprimimos o valor da variável 'nome' local
     console.log(nome);
 }

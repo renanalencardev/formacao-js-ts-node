@@ -40,7 +40,8 @@ if (valorNulo) {
 
 // Usando o operador de negação (!) para verificar se o valor é falsy
 if(!valorNulo) {
-    console.log("Valor é falso"); // Será executado pois null é falsy
+    // Será executado pois null é falsy
+    console.log("Variável valorNulo é null, está recebendo o operador !, então este bloco será executado"); 
 }
 
 // Exemplo com undefined - undefined é falsy

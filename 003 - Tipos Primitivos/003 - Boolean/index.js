@@ -10,9 +10,9 @@ console.log(verdadeiro);
 console.log(falso);
 
 // Comparação de igualdade
-console.log(1 === 1);
-console.log(1 === 2);
+console.log(1 === 1); // true
+console.log(1 === 2); // false
 
 // typeof retorna o tipo de dado de uma variável
-console.log(typeof true);
-console.log(typeof false);
+console.log(typeof true); // boolean
+console.log(typeof false); // boolean

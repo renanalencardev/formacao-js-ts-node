@@ -20,7 +20,7 @@ function calcularIMC(peso, altura) {
 }
 
 function classificarIMC(imc) {
-    switch (true) {
+    switch (imc) {
         case imc < 18.5:
             return "Abaixo do peso";
         case imc >= 18.5 && imc <= 24.9:

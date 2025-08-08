@@ -16,7 +16,7 @@ function isValidDeclaration() {
     }
     return false;
 }
-console.log(isValidDeclaration()) // 3
+console.log(isValidDeclaration()) // result: false
 
 // 2- Function expression
 const isValidExpression = function () {

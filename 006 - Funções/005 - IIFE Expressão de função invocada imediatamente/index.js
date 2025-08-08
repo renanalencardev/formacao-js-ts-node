@@ -17,10 +17,14 @@
     console.log(teste) // IIFE com arrow function
 })();
 
-// console.log(teste) // ReferenceError: teste is not defined
-
 // IIFE com parâmetros e arrow function
 ((nome) => {
     console.log("IIFE com parâmetros e arrow function")
     console.log(nome)
 })("Renan Alencar") // Renan Alencar;
+
+
+const testeWilliam = () => {
+    console.log("Teste William")
+}
+

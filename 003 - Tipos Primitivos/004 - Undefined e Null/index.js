@@ -11,4 +11,4 @@ console.log(indefinido);
 console.log(nulo);
 
 // Comparação de igualdade entre null e undefined
-console.log(null === undefined);
+console.log(null === undefined); // false

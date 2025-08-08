@@ -48,3 +48,5 @@ console.log([
         }
     }
 ])
+
+console.log(aluno.nome); // Acessa e imprime a propriedade 'nome' do objeto aluno

@@ -1,17 +1,17 @@
 function nomeFunc(){
-    return "Renan Alencar"
+    return "Função normal"
 }
 
-console.log(nomeFunc())
+console.log(nomeFunc()) // Função normal
 
 const nomeFuncArrow = () => {
-    return "Renan Alencar"
+    return "Arrow function"
 }
 
-console.log(nomeFuncArrow())
+console.log(nomeFuncArrow()) // Arrow function
 
-const nomeFuncArrowReturn = () => "Renan Alencar"
-console.log(nomeFuncArrowReturn())
+const nomeFuncArrowReturn = () => "Arrow function com retorno implícito";
+console.log(nomeFuncArrowReturn()) // Arrow function com retorno implícito
 
 // o hositing não funciona com arrow function
 // console.log(nomeFuncArrowParams()) // ReferenceError: Cannot access 'nomeFuncArrowParams' before initialization
@@ -19,7 +19,7 @@ console.log(nomeFuncArrowReturn())
 //const nomeFuncArrowParams = param => param;
 
 // arrow function com parâmetros
-const nomeFuncArrowParams2 = param1 => param1 + 2;
+const nomeFuncArrowParams2 = param1 => param1 + 2; // Arrow function com parâmetro
 console.log(nomeFuncArrowParams2(2)) // 4
 
 // Não pode ser invocada com o operador new
@@ -34,11 +34,14 @@ class newFunc {
 }
 // instanciando a classe newFunc
 const classeNome = new newFunc("Renan Alencar")
-console.log(classeNome.nome) // newFunc { nome: 'Renan Alencar' }
+console.log(classeNome.nome) // Renan Alencar
 
 // Contexto
-// Arrow functions possuem this lexical, ou seja, o valor de this é determinado pelo contexto em que a função foi definida, e não pelo contexto em que ela é chamada. Isso significa que o valor de this dentro de uma arrow function é o mesmo que o valor de this fora dela.
-// Isso é diferente das funções normais, onde o valor de this é determinado pelo contexto em que a função é chamada. Isso pode levar a comportamentos inesperados se você não estiver ciente disso.
+// Arrow functions possuem this lexical, ou seja, o valor de this é determinado pelo contexto em que a função 
+// foi definida, e não pelo contexto em que ela é chamada. Isso significa que o valor de this dentro de uma 
+// arrow function é o mesmo que o valor de this fora dela.
+// Isso é diferente das funções normais, onde o valor de this é determinado pelo contexto em que a função 
+// é chamada. Isso pode levar a comportamentos inesperados se você não estiver ciente disso.
 const lanches = {
     cardapio: [
         { nome: "Hamburguer", preco: "R$ 10" },
@@ -50,9 +53,11 @@ const lanches = {
     meuPedidoFunc: function(select) {
         return console.log(this.cardapio[select]);
     },  
-    // Neste caso (arrow funcion) o this não se refere mais ao objeto lanches, mas sim ao contexto em que a função foi chamada.  
+    // Neste caso (arrow funcion) o this não se refere mais ao objeto lanches, mas sim ao contexto 
+    // em que a função foi chamada.  
     // Um erro é lançado porque o this não está definido no contexto da função.
-    // Se o array cardapio estiver dentro do contexto da função meuPedidoArrowFunc, o this não se refere mais ao objeto lanches, mas sim ao contexto em que a função foi chamada.
+    // Se o array cardapio estiver dentro do contexto da função meuPedidoArrowFunc, o this não se refere 
+    // mais ao objeto lanches, mas sim ao contexto em que a função foi chamada.
     meuPedidoArrowFunc: (select) => {
         return console.log(this.cardapio[select]);
     }

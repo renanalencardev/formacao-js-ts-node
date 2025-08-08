@@ -13,15 +13,15 @@ function soma(num1, num2) {
     return num1 + num2
     
 }
-console.log(soma(true, 3))
+console.log(soma(true, 3)) // Os parâmetros devem ser números
 
-console.log(soma(2, soma(5,1))) 
+console.log(soma(2, soma(5,1))) // 8
 
 // arguments é um objeto semelhante a um array que contém todos os argumentos passados para a função.
 // Ele é acessível dentro da função e pode ser usado para manipular os argumentos passados.
-function subtracao(){
+function argumentos(){
     return arguments;
 }
 
-console.log(subtracao(2, 3, 4, 5)) // [Arguments] { '0': 2, '1': 3, '2': 4, '3': 5 }
-console.log(subtracao()) // [Arguments] { }
+console.log(argumentos(2, 3, 4, 5)) // [Arguments] { '0': 2, '1': 3, '2': 4, '3': 5 }
+console.log(argumentos()) // [Arguments] { }

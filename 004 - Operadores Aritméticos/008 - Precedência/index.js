@@ -16,7 +16,7 @@ console.log(2 + 3 * 4); // 14
 // Parênteses têm a maior precedência, seguidos por multiplicação, divisão, resto da divisão, adição e subtração.
 console.log((2 + 3) * 4); // 20
 console.log(15 * (20 / 10)); // 30
-console.log((15 * 10) / 10 === 15 && 10 * 10 === 14); // false
+console.log((15 * 10) / 10 === 15 && 10 * 10 === 14); // false 
 console.log((15 * 10) / 10 === 15 || 10 * 10 === 14); // true
 
 
